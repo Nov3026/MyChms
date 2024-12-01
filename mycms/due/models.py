@@ -22,7 +22,7 @@ class ChoirDue(models.Model):
 
 
     def __str__(self):
-        return self.choir_member
+        return f"self.choir_member"
     
     def save(self, *args, **kwargs):
         self.balance = self.amount_due - self.amount_paid

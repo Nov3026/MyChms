@@ -18,7 +18,7 @@ class ChurchTithe(models.Model):
 
 
     def __str__(self):
-        return self.member.full_name
+        return f"{self.member.full_name}"
     
     class Meta:
         unique_together = ('member', 'church')
